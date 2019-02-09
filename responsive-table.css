@@ -1,0 +1,189 @@
+body {
+    background-color: #e7e7e7;
+}
+
+.content {
+    padding: 10px;
+}
+
+/* Custom table header */
+
+.table-headers {
+    display: flex;
+}
+
+.custom-table-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.custom-table-header p {
+    margin-bottom: 0px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.custom-table-wrapper {
+    margin-top: 35px;
+}
+
+.custom-table-row {
+    display: flex;
+    background: #FFF;
+    box-shadow: 5px 5px 14px 0 rgba(189, 189, 205, 0.1);
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.custom-table-body {
+    margin-top: 15px;
+}
+
+.custom-table-cell {
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.center-wrapper {
+    width: 100%;
+}
+
+.username-cell .center-wrapper {
+    display: flex;
+}
+
+.action-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-cell button {
+    padding: 6px 14px;
+}
+
+.hollow-button {
+    font-size: 13px;
+}
+
+.center-wrapper p {
+    margin-bottom: 0px;
+}
+
+/* Profile Image and Name*/
+
+.profile_image {
+    display: inline;
+    border-radius: 50%;
+}
+
+.profile_image>img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center right;
+    margin-right: 10px;
+}
+
+.profile_name {
+    display: inline-block;
+    vertical-align: middle;
+    align-self: center;
+}
+
+.action-cell img {
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+.action-cell .button-text {
+    display: inherit;
+}
+
+.mobile-column-name {
+    display: none;
+}
+
+.flex-basis-10 {
+    flex-basis: 10%;
+}
+
+.flex-basis-20 {
+    flex-basis: 20%;
+}
+
+.flex-basis-30 {
+    flex-basis: 30%;
+}
+
+.flex-basis-40 {
+    flex-basis: 40%;
+}
+
+.flex-basis-50 {
+    flex-basis: 50%;
+}
+
+
+/* -------------------------------------------------------Responsive -------------------------------------------------------*/
+
+/* Large devices (desktops, less than 1200px) */
+
+@media (max-width: 1199.98px) {
+    .tab-header {
+        display: inherit;
+    }
+
+    .action-cell .button-text {
+        display: none;
+        padding-left: 10px;
+        position: relative;
+        top: 2px;
+    }
+
+    .action-cell button {
+        padding: 5px 11px;
+        width: 100%;
+    }
+
+    .action-cell button img {
+        display: inline-block;
+        position: relative;
+        top: -2px;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+
+@media (max-width: 991.98px) {}
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+    .action-cell .button-text {
+        display: inherit;
+    }
+
+    .table-headers {
+        display: none;
+    }
+
+    .custom-table-row {
+        flex-direction: column;
+    }
+
+    .mobile-column-name {
+        display: inline-block;
+        min-width: 100px;
+        font-weight: 600;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {}

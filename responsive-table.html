@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Table | Aditya Tyagi</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="responsive-table.css">
+</head>
+
+<body>
+    <div class="content">
+
+        <!--Custom Responsive Table-->
+        <div class="custom-table-wrapper">
+            <div class="table-headers">
+                <div class="custom-table-header flex-basis-30">
+                    <p>Name</p>
+                </div>
+                <div class="custom-table-header flex-basis-20">
+                    <p>Location</p>
+                </div>
+                <div class="custom-table-header flex-basis-30">
+                    <p>Contact</p>
+                </div>
+                <div class="custom-table-header flex-basis-10">
+                    <p class="tab-header">Add Notes</p>
+                </div>
+                <div class="custom-table-header flex-basis-10">
+                    <p class="tab-header">View Profile</p>
+                </div>
+            </div>
+
+            <div class="custom-table-body">
+
+                <!--Row Starts-->
+                <div *ngFor="let company of companiesData" class="custom-table-row">
+
+                    <div class="custom-table-cell username-cell flex-basis-30">
+                        <span class="mobile-column-name">
+                            Name
+                        </span>
+                        <div class="center-wrapper">
+                            <span class="profile_image">
+                                <img src="default-profile-image.png" alt="Candidate Profile Pic">
+                            </span>
+                            <span class="profile_name">EngineerBabu</span>
+                        </div>
+                    </div>
+
+                    <div class="custom-table-cell flex-basis-20">
+                        <span class="mobile-column-name">
+                            Location
+                        </span>
+                        <div class="center-wrapper">
+                            <span class="profile_name">New Delhi</span>
+                        </div>
+                    </div>
+
+                    <div class="custom-table-cell flex-basis-30">
+                        <span class="mobile-column-name">
+                            Contact
+                        </span>
+                        <div class="center-wrapper">
+                            <p>aditya.tyagi@ebabu.co</p>
+                        </div>
+                    </div>
+
+                    <div class="custom-table-cell flex-basis-10  action-cell">
+                        <span class="mobile-column-name">
+                            Add Notes
+                        </span>
+                        <div class="center-wrapper">
+                            <button class="btn btn-primary">
+                                <img src="add-notes.svg" alt="Add Notes">
+                                <span class="button-text">Add Notes</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="custom-table-cell flex-basis-10  action-cell">
+                        <span class="mobile-column-name">
+                            View Profile
+                        </span>
+                        <div class="center-wrapper">
+                            <button class="btn btn-info">
+                                <img src="view-profile.svg" alt="View Profile">
+                                <span class="button-text">View Profile</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <!--Row Ends-->
+
+                <!--Row Starts-->
+                <div *ngFor="let company of companiesData" class="custom-table-row">
+
+                    <div class="custom-table-cell username-cell flex-basis-30">
+                        <span class="mobile-column-name">
+                            Name
+                        </span>
+                        <div class="center-wrapper">
+                            <span class="profile_image">
+                                <img src="default-profile-image.png" alt="Candidate Profile Pic">
+                            </span>
+                            <span class="profile_name">EngineerBabu</span>
+                        </div>
+                    </div>
+
+                    <div class="custom-table-cell flex-basis-20">
+                        <span class="mobile-column-name">
+                            Location
+                        </span>
+                        <div class="center-wrapper">
+                            <span class="profile_name">New Delhi</span>
+                        </div>
+                    </div>
+
+                    <div class="custom-table-cell flex-basis-30">
+                        <span class="mobile-column-name">
+                            Contact
+                        </span>
+                        <div class="center-wrapper">
+                            <p>aditya.tyagi@ebabu.co</p>
+                        </div>
+                    </div>
+
+                    <div class="custom-table-cell flex-basis-10  action-cell">
+                        <span class="mobile-column-name">
+                            Add Notes
+                        </span>
+                        <div class="center-wrapper">
+                            <button class="btn btn-primary">
+                                <img src="add-notes.svg" alt="Add Notes">
+                                <span class="button-text">Add Notes</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="custom-table-cell flex-basis-10  action-cell">
+                        <span class="mobile-column-name">
+                            View Profile
+                        </span>
+                        <div class="center-wrapper">
+                            <button class="btn btn-info">
+                                <img src="view-profile.svg" alt="View Profile">
+                                <span class="button-text">View Profile</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <!--Row Ends-->
+
+                <!--Row Starts-->
+                <div *ngFor="let company of companiesData" class="custom-table-row">
+
+                    <div class="custom-table-cell username-cell flex-basis-30">
+                        <span class="mobile-column-name">
+                            Name
+                        </span>
+                        <div class="center-wrapper">
+                            <span class="profile_image">
+                                <img src="default-profile-image.png" alt="Candidate Profile Pic">
+                            </span>
+                            <span class="profile_name">EngineerBabu</span>
+                        </div>
+                    </div>
+
+                    <div class="custom-table-cell flex-basis-20">
+                        <span class="mobile-column-name">
+                            Location
+                        </span>
+                        <div class="center-wrapper">
+                            <span class="profile_name">New Delhi</span>
+                        </div>
+                    </div>
+
+                    <div class="custom-table-cell flex-basis-30">
+                        <span class="mobile-column-name">
+                            Contact
+                        </span>
+                        <div class="center-wrapper">
+                            <p>aditya.tyagi@ebabu.co</p>
+                        </div>
+                    </div>
+
+                    <div class="custom-table-cell flex-basis-10  action-cell">
+                        <span class="mobile-column-name">
+                            Add Notes
+                        </span>
+                        <div class="center-wrapper">
+                            <button class="btn btn-primary">
+                                <img src="add-notes.svg" alt="Add Notes">
+                                <span class="button-text">Add Notes</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="custom-table-cell flex-basis-10  action-cell">
+                        <span class="mobile-column-name">
+                            View Profile
+                        </span>
+                        <div class="center-wrapper">
+                            <button class="btn btn-info">
+                                <img src="view-profile.svg" alt="View Profile">
+                                <span class="button-text">View Profile</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <!--Row Ends-->
+
+            </div>
+        </div>
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
